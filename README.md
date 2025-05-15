@@ -1,12 +1,12 @@
-# ```IOMap``` — I/O Monitor for Linux
+# ```iotop``` — I/O Monitor for Linux
 
-```IOMap``` is a lightweight terminal-based I/O monitor for Linux that identifies processes causing high disk read/write usage and estimates their impact on system responsiveness.
+```iotop``` is a lightweight terminal-based I/O monitor for Linux that identifies processes causing high disk read/write usage and estimates their impact on system responsiveness.
 
 ## Features
 
 ### Small memory and CPU usage!
 
-```IOMap``` is lightweight and efficient, minimizing memory and CPU usage by using optimized system calls and reading data from the /proc filesystem. 
+```iotop``` is lightweight and efficient, minimizing memory and CPU usage by using optimized system calls and reading data from the ```/proc``` filesystem. 
 
 It uses Rust and ```ratatui``` for a clean, responsive terminal UI that refreshes at a configurable interval.
 
@@ -14,7 +14,7 @@ It uses Rust and ```ratatui``` for a clean, responsive terminal UI that refreshe
 It tracks read and write bytes per process in real-time, calculating deltas and showing throughput in MB/s.
 
 ### Impact estimation
-Based on throughput thresholds, ```IOMap``` estimates the impact level of each process on system responsiveness (Low, Medium, High).
+Based on throughput thresholds, ```iotop``` estimates the impact level of each process on system responsiveness (Low, Medium, High).
 
 ## Packaging
 
@@ -29,8 +29,8 @@ Requirements:
 * Linux system with ```/proc``` filesystem
 
 ```
-git clone https://github.com/jhenrique04/iomap
-cd iomap
+git clone https://github.com/jhenrique04/iotop
+cd iotop
 cargo run --release 1000 # Put the interval that you want in ms here (1000 is the default)
 ```
 

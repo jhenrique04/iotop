@@ -6,7 +6,7 @@ use anyhow::Result;
 use clap::Parser;
 
 #[derive(clap::Parser, Debug)]
-#[command(author, version, about = "IOMap - Intelligent I/O monitor for Linux")]
+#[command(author, version, about = "iotop - I/O monitor")]
 struct Cli {
     #[arg(short, long, default_value_t = 1000)]
     interval: u64,
